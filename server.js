@@ -19,7 +19,7 @@ const corsOptions = {
   };
   
 
-  app.use(cors(corsOptions));
+  app.use(cors({ origin: 'https://your-netlify-site.netlify.app' }));
 
 app.use('/api/users', userRoutes);
 app.use('/api/registrations', registrationRoutes);
